@@ -25,18 +25,67 @@ with open(election_csv, 'r') as csvfile:
         a_candiate = row[2]
         candidate.append(a_candiate)
 
-print(len(ballot_id))
+total_votes = len(ballot_id)
 
 charles = 0
 diana = 0
 raymon = 0
+
 for i in range(len(candidate)):
     a_candiate = candidate[i]
     if a_candiate == "Charles Casper Stockham":
         charles = charles + 1
     elif a_candiate == "Diana DeGette":
         diana = diana + 1
-    elif a_candiate == "Raymon Anthony Doana":
+    elif a_candiate == "Raymon Anthony Doane":
         raymon = raymon + 1
 
-print(charles)
+print(charles, diana, raymon)
+
+charles_percent = round(charles / len(candidate) * 100, 3)
+diana_percent = round(diana / len(candidate) * 100, 3)
+raymon_percent = round(raymon / len(candidate) * 100, 3)
+
+print(charles_percent)
+
+if charles_percent > raymon_percent:
+    if charles_percent > diana_percent:
+        winner = "Charles Casper Stockham"
+    else:
+        winner = "Diana DeGette"
+else:
+    if raymon_percent > diana_percent:
+        winner = "Raymon Anthony Doane"
+    else:
+        winner = "Diana DeGette"
+
+print(winner)
+
+
+print('Election Results')
+print('-------------------------')
+print(f'Total Votes: {total_votes}')
+print('-------------------------')
+print(f'Charles Casper Stockham: {charles_percent}% ({charles})')
+print(f'Diana DeGette: {diana_percent}% ({diana})')
+print(f'Raymon Anthony Doane: {raymon_percent}% ({raymon})')
+print('-------------------------')
+print(f'Winner: {winner}')
+print('-------------------------')
+
+#setting path for analysis file
+analysis_txt = os.path.join('analysis', 'analysis.txt')
+
+#opening analysis file and printing Finacial Analysis to the file, which is what file = text does
+#https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file
+with open(analysis_txt, 'w') as text:
+    print('Election Results', file = text)
+    print('-------------------------', file = text)
+    print(f'Total Votes: {total_votes}', file = text)
+    print('-------------------------', file = text)
+    print(f'Charles Casper Stockham: {charles_percent}% ({charles})', file = text)
+    print(f'Diana DeGette: {diana_percent}% ({diana})', file = text)
+    print(f'Raymon Anthony Doane: {raymon_percent}% ({raymon})', file = text)
+    print('-------------------------', file = text)
+    print(f'Winner: {winner}', file = text)
+    print('-------------------------', file = text)
