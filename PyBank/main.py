@@ -59,8 +59,6 @@ for i in range(len(change)):
     if profit_change > greatest_increase:
         greatest_increase = profit_change
         index_increase = i
-    else:
-        "hi"
     # replace greater decrease change if current value is smaller, and hold that index
     if profit_change < greatest_decrease:
         greatest_decrease = profit_change
