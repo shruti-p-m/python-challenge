@@ -26,7 +26,7 @@ The Election Results contains:
 ## Citations
 The script in main.py in the PyBank folder and the PyPoll folder both contain codes from the following websites:
 - https://stackoverflow.com/questions/455612/limiting-floats-to-two-decimal-points
-  The code from this website was used to format float variables to a certain number of decimal points, it is present in line 46 in the PyBank main.py script and in lines 47-49 in the PyPoll main.py script.
+  The code from this website was used to format float variables to a certain number of decimal points, it is present in line 46 in the PyBank main.py script and in lines 50-52 in the PyPoll main.py script.
 
-- https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file (bank 81-
-  The code from this website was used to print lines to a text file instead of to the terminal, it is present in lines 81-88 in the PyBank main.py script and in lines 81-91 in the PyPoll main.py script.
+- https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-fil
+  The code from this website was used to print lines to a text file instead of to the terminal, it is present in lines 81-88 in the PyBank main.py script and in lines 84-94 in the PyPoll main.py script.
