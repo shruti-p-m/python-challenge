@@ -43,7 +43,10 @@ for i in range(len(candidate)):
     elif a_candiate == "Raymon Anthony Doane":
         raymon = raymon + 1
 
+
 #calculating what percentage of the votes each candiate got, and rounding the number to the third decimal place
+#round average change to typical ##.### format
+#https://stackoverflow.com/questions/455612/limiting-floats-to-two-decimal-points
 charles_percent = round(charles / len(candidate) * 100, 3)
 diana_percent = round(diana / len(candidate) * 100, 3)
 raymon_percent = round(raymon / len(candidate) * 100, 3)
