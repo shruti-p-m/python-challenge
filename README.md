@@ -22,3 +22,11 @@ The Election Results contains:
 - the percentage of the total votes each candidate got
 - the number of votes each candidate got
 - the winner of the election based on the greatest number of votes
+
+## Citations
+The script in main.py in the PyBank folder and the PyPoll folder both contain codes from the following websites:
+- https://stackoverflow.com/questions/455612/limiting-floats-to-two-decimal-points
+  The code from this website was used to format float variables to a certain number of decimal points, it is present in line 46 in the PyBank main.py script and in lines 47-49 in the PyPoll main.py script.
+
+- https://stackoverflow.com/questions/36571560/directing-print-output-to-a-txt-file (bank 81-
+  The code from this website was used to print lines to a text file instead of to the terminal, it is present in lines 81-88 in the PyBank main.py script and in lines 81-91 in the PyPoll main.py script.
